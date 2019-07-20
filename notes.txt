@@ -1,0 +1,23 @@
+FONTS...
+Text Font:font-family: sans-serif;
+
+
+ICONS...
+Twitter:
+<i class="fa fa-twitter" aria-hidden="true"></i>
+Facebook:
+<i class="fa fa-facebook" aria-hidden="true"></i>
+Linkedin:
+<i class="fa fa-linkedin" aria-hidden="true"></i>
+
+
+COLOR...
+Green: #1C6B1C - rgb(28, 107, 28)
+Yellow: #E8FE15 - rgb(232, 254, 21)
+Dak-Text: #262626
+White-Text: #ffffff
+
+
+COMMENTS...
+<!-- Start of -->
+<!-- End of -->
