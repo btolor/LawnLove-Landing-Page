@@ -1,16 +1,18 @@
 /*VARIABLES*/
 //Font...
-$text: sans-serif
+$text: 'Open Sans', sans-serif
 
 //Colors...
 $green: #1C6B1C  
+$green-action: #103d10
 $green-Olay: rgba(28, 107, 28, 1)
 $yellow: #E8FE15 
+$yellow-action: #899801
 $d-text: #262626
 $w-text: #ffffff
 
 //Backgrounds...
-$top-bg-img: '../images/top-yard.jpg'
+$top-bg-img: '../images/top-bg-img.jpg'
 $btm-bg-img: '../images/btm-yard.jpg'
 
 /*MIXINS*/
@@ -25,5 +27,127 @@ $btm-bg-img: '../images/btm-yard.jpg'
     font-weight: $weight
     color: $color
 
+//Background-Image...
+=bg-img($img,$size)
+    background-image: url($img)
+    background-size: 100% 100%
+
+//Btn's...
+=btn($dec,$trans,$bg-color,$pad)
+    text-decoration: $dec
+    text-transform: $trans
+    background: $bg-color
+    padding: $pad
+
+
+
+
 /*STYLES*/
+#header
+    text-align: center
+    background-color: $yellow
+    img
+        width: 14%
+    .menu
+        display: flex
+        flex-direction: row
+        justify-content: space-between
+        +center(85%, 0 auto)
+        position: relative
+        top: -11vh
+        .left-menu
+            width: 50%
+            text-align: start
+            a
+                text-decoration: none
+                text-transform: uppercase
+                +font($text,1.3vw,800,$green)
+                margin-right: 5%
+                transition: 0.2s ease-out 
+                &:hover
+                    color: $w-text
+                    border-bottom: 3px solid $green
+                    padding: 2% 0
+                    position: relative
+                    top: .5vh
+        .right-menu
+            width: 50%
+            text-align: end
+            #quote
+                text-decoration: none
+                text-transform: uppercase
+                +font($text,1.4vw,800,$yellow)
+                background: $green
+                padding: 3% 4%
+                transition: 0.2s ease-out 
+                &:hover
+                    background: $green-action
+.squeeze-page
+    +bg-img($top-bg-img,100%  100%)
+    #squeeze-bg
+        background-color: rgba(0,0,0,.6)
+        padding: 8% 0
+        .container
+            +center(95%,0 auto)
+            display: flex
+            flex-direction: row 
+            .squeeze-content
+                width: 60%
+                padding-left: 4%
+                padding-top: 3%
+                #squeeze-slogan
+                    +font($text,5vw,800,$w-text)
+                    line-height: 1.4
+                    padding-bottom: 6%
+                    #squeeze-slogan-punctuation
+                        color: $yellow
+                #squeeze-btn
+                    text-decoration: none
+                    text-transform: uppercase
+                    +font($text,1.2vw,800,$green)
+                    background: $yellow
+                    padding: 2% 7%
+                    transition: 0.2s ease-out 
+                    &:hover
+                        background: $yellow-action
+            .form
+                width: 40%
+                background: white
+                padding: 4% 0
+                form
+                    +center(80%,0 auto)
+                    display: flex
+                    flex-direction: column
+                    #form-header
+                        +font($text,2.5vw,800,$green)
+                    #form-info
+                        +font($text,1.2vw,600,$d-text)
+                        line-height: 1.9
+                        padding: 4% 0
+                    input
+                        font-family: $text
+                        font-size: 1.6vw
+                        border-radius: 4px
+                        border: .8px solid $d-text
+                        +center(99%, 0 auto)
+                        margin-bottom: 3.2%
+                        padding: 1% 0 1% 2%
+                    a 
+                        text-align: center
+                        +font($text,1.4vw,800,$yellow)
+                        +btn(none,uppercase,$green,2.5% 0)
+                        &:hover
+                            background-color: $green-action
+.footer
+    text-align: center
+    background: $green
+    +font($text,1.5vw,500,$w-text)
+    padding: 1.5% 0
+    #media-icons
+        padding: 2% 0
+        a
+            text-decoration: none
+            color: $w-text
+            font-size: 2vw
+            margin: 0 1.5%
 

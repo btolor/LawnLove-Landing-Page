@@ -1,3 +1,5 @@
 $(document).ready(function () {
-    $("body").css('color','red');
+    $(".care").hide();
+    $(".history").hide();
+    $(".consultation").hide();
 });

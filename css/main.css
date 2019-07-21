@@ -1,5 +1,173 @@
 /*VARIABLES*/
 /*MIXINS*/
 /*STYLES*/
+#header {
+  text-align: center;
+  background-color: #E8FE15;
+}
+#header img {
+  width: 14%;
+}
+#header .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 85%;
+  margin: 0 auto;
+  position: relative;
+  top: -11vh;
+}
+#header .menu .left-menu {
+  width: 50%;
+  text-align: start;
+}
+#header .menu .left-menu a {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.3vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  margin-right: 5%;
+  transition: 0.2s ease-out;
+}
+#header .menu .left-menu a:hover {
+  color: #ffffff;
+  border-bottom: 3px solid #1C6B1C;
+  padding: 2% 0;
+  position: relative;
+  top: 0.5vh;
+}
+#header .menu .right-menu {
+  width: 50%;
+  text-align: end;
+}
+#header .menu .right-menu #quote {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 800;
+  color: #E8FE15;
+  background: #1C6B1C;
+  padding: 3% 4%;
+  transition: 0.2s ease-out;
+}
+#header .menu .right-menu #quote:hover {
+  background: #103d10;
+}
+
+.squeeze-page {
+  background-image: url("../images/top-bg-img.jpg");
+  background-size: 100% 100%;
+}
+.squeeze-page #squeeze-bg {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 8% 0;
+}
+.squeeze-page #squeeze-bg .container {
+  width: 95%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content {
+  width: 60%;
+  padding-left: 4%;
+  padding-top: 3%;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content #squeeze-slogan {
+  font-family: "Open Sans", sans-serif;
+  font-size: 5vw;
+  font-weight: 800;
+  color: #ffffff;
+  line-height: 1.4;
+  padding-bottom: 6%;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content #squeeze-slogan #squeeze-slogan-punctuation {
+  color: #E8FE15;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content #squeeze-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  background: #E8FE15;
+  padding: 2% 7%;
+  transition: 0.2s ease-out;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content #squeeze-btn:hover {
+  background: #899801;
+}
+.squeeze-page #squeeze-bg .container .form {
+  width: 40%;
+  background: white;
+  padding: 4% 0;
+}
+.squeeze-page #squeeze-bg .container .form form {
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+.squeeze-page #squeeze-bg .container .form form #form-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 2.5vw;
+  font-weight: 800;
+  color: #1C6B1C;
+}
+.squeeze-page #squeeze-bg .container .form form #form-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.9;
+  padding: 4% 0;
+}
+.squeeze-page #squeeze-bg .container .form form input {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.6vw;
+  border-radius: 4px;
+  border: 0.8px solid #262626;
+  width: 99%;
+  margin: 0 auto;
+  margin-bottom: 3.2%;
+  padding: 1% 0 1% 2%;
+}
+.squeeze-page #squeeze-bg .container .form form a {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 800;
+  color: #E8FE15;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #1C6B1C;
+  padding: 2.5% 0;
+}
+.squeeze-page #squeeze-bg .container .form form a:hover {
+  background-color: #103d10;
+}
+
+.footer {
+  text-align: center;
+  background: #1C6B1C;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.5vw;
+  font-weight: 500;
+  color: #ffffff;
+  padding: 1.5% 0;
+}
+.footer #media-icons {
+  padding: 2% 0;
+}
+.footer #media-icons a {
+  text-decoration: none;
+  color: #ffffff;
+  font-size: 2vw;
+  margin: 0 1.5%;
+}
 
 /*# sourceMappingURL=main.css.map */
