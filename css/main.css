@@ -29,7 +29,7 @@
   font-weight: 800;
   color: #1C6B1C;
   margin-right: 5%;
-  transition: 0.2s ease-out;
+  transition: 0.3s ease-out;
 }
 #header .menu .left-menu a:hover {
   color: #ffffff;
@@ -101,10 +101,33 @@
 .squeeze-page #squeeze-bg .container .squeeze-content #squeeze-btn:hover {
   background: #899801;
 }
+.squeeze-page #squeeze-bg .container .squeeze-content .basic-serv {
+  margin-top: 8%;
+  padding-left: 5%;
+  display: none;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content .basic-serv #basics {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 800;
+  color: #ffffff;
+  padding-bottom: 3%;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content .basic-serv p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #ffffff;
+  margin-bottom: 2.5%;
+}
+.squeeze-page #squeeze-bg .container .squeeze-content .basic-serv p span {
+  margin-right: 2%;
+  color: #E8FE15;
+}
 .squeeze-page #squeeze-bg .container .form {
   width: 40%;
   background: white;
-  padding: 4% 0;
+  padding: 6% 0;
 }
 .squeeze-page #squeeze-bg .container .form form {
   width: 80%;
@@ -124,7 +147,7 @@
   font-weight: 600;
   color: #262626;
   line-height: 1.9;
-  padding: 4% 0;
+  padding: 4% 0 10%;
 }
 .squeeze-page #squeeze-bg .container .form form input {
   font-family: "Open Sans", sans-serif;
@@ -133,7 +156,7 @@
   border: 0.8px solid #262626;
   width: 99%;
   margin: 0 auto;
-  margin-bottom: 3.2%;
+  margin-bottom: 3.4%;
   padding: 1% 0 1% 2%;
 }
 .squeeze-page #squeeze-bg .container .form form a {
@@ -146,9 +169,241 @@
   text-transform: uppercase;
   background: #1C6B1C;
   padding: 2.5% 0;
+  width: 102%;
+  margin: 5% 0;
 }
 .squeeze-page #squeeze-bg .container .form form a:hover {
   background-color: #103d10;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed {
+  display: none;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec {
+  display: flex;
+  flex-direction: row;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec #zip {
+  width: 30%;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec #state {
+  width: 30%;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #submit {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 800;
+  color: #E8FE15;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #1C6B1C;
+  padding: 2.5% 0;
+  width: 102%;
+  margin: 5% 0;
+  border-radius: 0;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #submit:hover {
+  background-color: #103d10;
+}
+
+.care {
+  padding: 8% 0;
+  background-color: #E8FE15;
+}
+.care #care-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 4vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  text-align: center;
+}
+.care #care-sub-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  text-align: center;
+  padding: 2% 0 8%;
+}
+.care .services {
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.care .services .grass-weeds {
+  width: 24%;
+  text-align: center;
+  padding: 0 1%;
+}
+.care .services .grass-weeds img {
+  width: 30%;
+}
+.care .services .grass-weeds #grass-weeds-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  padding: 8% 0;
+}
+.care .services .grass-weeds #grass-weeds-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+}
+.care .services .mowing {
+  width: 24%;
+  text-align: center;
+  padding: 0 1%;
+}
+.care .services .mowing img {
+  width: 30%;
+}
+.care .services .mowing #mowing-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  padding: 8% 0;
+}
+.care .services .mowing #mowing-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+}
+.care .services .landscape {
+  width: 24%;
+  text-align: center;
+  padding: 0 1%;
+}
+.care .services .landscape img {
+  width: 30%;
+}
+.care .services .landscape #landscape-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  padding: 8% 0;
+}
+.care .services .landscape #landscape-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+}
+.care .services .watering {
+  width: 24%;
+  text-align: center;
+  padding: 0 1%;
+}
+.care .services .watering img {
+  width: 30%;
+}
+.care .services .watering #watering-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.8vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  padding: 8% 0;
+}
+.care .services .watering #watering-info {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+}
+
+.history .container {
+  width: 40%;
+  margin: 0 auto;
+  padding: 6% 0 12%;
+}
+.history .container #history-header {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.5vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  padding-bottom: 3.7%;
+}
+.history .container #history-infoA {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+  padding-bottom: 3.7%;
+}
+.history .container #history-infoB {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #262626;
+  line-height: 1.8;
+}
+.history .container #history-btn {
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #1C6B1C;
+  padding: 2.5% 5%;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 800;
+  color: #E8FE15;
+  position: relative;
+  top: 8vh;
+}
+.history .container #history-btn:hover {
+  background-color: #103d10;
+}
+
+.consultation {
+  background-image: url("../images/btm-yard.jpg");
+  background-size: 100% 100%;
+}
+.consultation #consultation-bg {
+  background-color: rgba(28, 107, 28, 0.7);
+}
+.consultation #consultation-bg .container {
+  text-align: center;
+  padding: 8% 0;
+}
+.consultation #consultation-bg .container #consultation-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 3.7vw;
+  font-weight: 800;
+  color: #ffffff;
+}
+.consultation #consultation-bg .container #consultation-header span {
+  color: #E8FE15;
+}
+.consultation #consultation-bg .container #consultation-sub-header {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4vw;
+  font-weight: 600;
+  color: #ffffff;
+  padding: 3% 0;
+}
+.consultation #consultation-bg .container #consultation-btn {
+  text-align: center;
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.2vw;
+  font-weight: 800;
+  color: #1C6B1C;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #E8FE15;
+  padding: 1% 1.5%;
+}
+.consultation #consultation-bg .container #consultation-btn:hover {
+  background-color: #899801;
 }
 
 .footer {
@@ -158,10 +413,10 @@
   font-size: 1.5vw;
   font-weight: 500;
   color: #ffffff;
-  padding: 1.5% 0;
+  padding: 1% 0;
 }
 .footer #media-icons {
-  padding: 2% 0;
+  padding: 1.5% 0;
 }
 .footer #media-icons a {
   text-decoration: none;

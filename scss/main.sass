@@ -5,7 +5,7 @@ $text: 'Open Sans', sans-serif
 //Colors...
 $green: #1C6B1C  
 $green-action: #103d10
-$green-Olay: rgba(28, 107, 28, 1)
+$green-Olay: rgba(28, 107, 28, .7)
 $yellow: #E8FE15 
 $yellow-action: #899801
 $d-text: #262626
@@ -39,7 +39,10 @@ $btm-bg-img: '../images/btm-yard.jpg'
     background: $bg-color
     padding: $pad
 
-
+//Display Flex...
+=flex($flex,$direction)
+    display: $flex
+    flex-direction: $direction
 
 
 /*STYLES*/
@@ -63,7 +66,7 @@ $btm-bg-img: '../images/btm-yard.jpg'
                 text-transform: uppercase
                 +font($text,1.3vw,800,$green)
                 margin-right: 5%
-                transition: 0.2s ease-out 
+                transition: 0.3s ease-out 
                 &:hover
                     color: $w-text
                     border-bottom: 3px solid $green
@@ -110,10 +113,23 @@ $btm-bg-img: '../images/btm-yard.jpg'
                     transition: 0.2s ease-out 
                     &:hover
                         background: $yellow-action
+                .basic-serv
+                    margin-top: 8%
+                    padding-left: 5%
+                    display: none
+                    #basics
+                        +font($text,1.8vw,800,$w-text)
+                        padding-bottom: 3%
+                    p
+                        +font($text,1.4vw,600,$w-text)
+                        margin-bottom: 2.5% 
+                        span
+                            margin-right: 2%
+                            color: $yellow
             .form
                 width: 40%
                 background: white
-                padding: 4% 0
+                padding: 6% 0
                 form
                     +center(80%,0 auto)
                     display: flex
@@ -123,31 +139,155 @@ $btm-bg-img: '../images/btm-yard.jpg'
                     #form-info
                         +font($text,1.2vw,600,$d-text)
                         line-height: 1.9
-                        padding: 4% 0
+                        padding: 4% 0 10%
                     input
                         font-family: $text
                         font-size: 1.6vw
                         border-radius: 4px
                         border: .8px solid $d-text
                         +center(99%, 0 auto)
-                        margin-bottom: 3.2%
+                        margin-bottom: 3.4%
                         padding: 1% 0 1% 2%
                     a 
                         text-align: center
                         +font($text,1.4vw,800,$yellow)
                         +btn(none,uppercase,$green,2.5% 0)
+                        +center(102%,5% 0)
+                        //display: none
                         &:hover
                             background-color: $green-action
+                    .squeezed
+                        display: none
+                        #zip-sec
+                            display: flex
+                            flex-direction: row
+
+                            #zip
+                                width: 30%
+                            #state
+                                width: 30%
+                        #submit
+                            +font($text,1.4vw,800,$yellow)
+                            +btn(none,uppercase,$green,2.5% 0)
+                            +center(102%,5% 0)
+                            border-radius: 0
+                            &:hover
+                                background-color: $green-action
+.care
+    padding: 8% 0
+    background-color: $yellow
+    #care-header
+        +font($text,4vw,800,$green)
+        text-align: center
+    #care-sub-header
+        +font($text,1.4vw,600,$d-text)
+        text-align: center
+        padding: 2% 0 8%
+    .services
+        +center(85%,0 auto)
+        +flex(flex,row)
+        justify-content: space-between
+        .grass-weeds
+            width: 24%
+            text-align: center
+            padding: 0 1%
+            img 
+                width: 30%
+            #grass-weeds-header
+                +font($text,1.8vw,800,$green)
+                padding: 8% 0
+            #grass-weeds-info
+                +font($text,1.4vw,600,$d-text)
+                line-height: 1.8
+        .mowing
+            width: 24%
+            text-align: center
+            padding: 0 1%
+            img 
+                width: 30%
+            #mowing-header
+                +font($text,1.8vw,800,$green)
+                padding: 8% 0
+            #mowing-info
+                +font($text,1.4vw,600,$d-text)
+                line-height: 1.8
+        .landscape
+            width: 24%
+            text-align: center
+            padding: 0 1%
+            img 
+                width: 30%
+            #landscape-header
+                +font($text,1.8vw,800,$green)
+                padding: 8% 0
+            #landscape-info
+                +font($text,1.4vw,600,$d-text)
+                line-height: 1.8
+        .watering
+            width: 24%
+            text-align: center
+            padding: 0 1%
+            img 
+                width: 30%
+            #watering-header
+                +font($text,1.8vw,800,$green)
+                padding: 8% 0
+            #watering-info
+                +font($text,1.4vw,600,$d-text)
+                line-height: 1.8
+.history
+    .container
+        +center(40%,0 auto)
+        padding: 6% 0 12%
+        #history-header
+            text-align: center
+            +font($text,3.5vw,800,$green)
+            padding-bottom: 3.7%
+        #history-infoA
+            +font($text,1.4vw,600,$d-text)
+            line-height: 1.8
+            padding-bottom: 3.7%
+        #history-infoB
+            +font($text,1.4vw,600,$d-text)
+            line-height: 1.8
+        #history-btn
+            +btn(none,uppercase,$green,2.5% 5%)
+            +font($text,1.4vw,800,$yellow)
+            position: relative 
+            top: 8vh
+            &:hover
+                background-color: $green-action
+.consultation
+    +bg-img($btm-bg-img,100% 100%)
+    #consultation-bg
+        background-color: $green-Olay
+        .container
+            text-align: center
+            padding: 8% 0
+            #consultation-header
+                +font($text,3.7vw,800,$w-text)
+                span
+                    color: $yellow
+            #consultation-sub-header
+                +font($text,1.4vw,600,$w-text)
+                padding: 3% 0
+            #consultation-btn
+                text-align: center
+                +font($text,1.2vw,800,$green)
+                +btn(none,uppercase,$yellow,1% 1.5%)
+                &:hover
+                    background-color: $yellow-action
 .footer
     text-align: center
     background: $green
     +font($text,1.5vw,500,$w-text)
-    padding: 1.5% 0
+    padding: 1% 0
     #media-icons
-        padding: 2% 0
+        padding: 1.5% 0
         a
             text-decoration: none
             color: $w-text
             font-size: 2vw
             margin: 0 1.5%
+            
 

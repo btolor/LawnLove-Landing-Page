@@ -59,6 +59,17 @@
                     <div class="squeeze-content" id="squeeze-content">
                         <p id="squeeze-slogan">Friendly<br>neighborhood<br>lawncare<span id="squeeze-slogan-punctuation">.</span></p>
                         <a href="#" id="squeeze-btn">view our services</a>
+
+                        <!-- start of basic-serv -->
+                        <div class="basic-serv" id="basic-serv">
+                            <h2 id="basics">The Basics</h2>
+                            <p><span>&#10003;</span>Mow & edge lawn</p>
+                            <p><span>&#10003;</span>Blow soft & hard areas</p>
+                            <p><span>&#10003;</span>Power hedge shrubs up to 6ft</p>
+                            <p><span>&#10003;</span>Weed control</p>
+                        </div>
+                        <!-- end of basic-serv -->
+
                     </div>
                     <!-- end of squeeze-content -->
 
@@ -69,10 +80,26 @@
                             <p id="form-info">
                                 Fill out our form and one of our specialists <br>will reach out with a quote within 24 hours.
                             </p>
-                            <!-- <input type="text" name="name" id="f-name" placeholder="First Name"> -->
+                            <input type="text" name="name" id="f-name" placeholder="First Name">
                             <input type="email" name="email" id="email" placeholder="E-mail">
-                            <!-- <input type="text" name="city" id="city" placeholder="City"> -->
-                            <a href="#" id="form-btn">submit</a>
+                            <a href="#squeeze-slogan" id="form-btn">submit</a>
+                            
+                            <!-- start of squeezed -->
+
+                            <div class="squeezed">
+
+                                <input type="text" name="address" id="address" placeholder="Address">
+                                <input type="text" name="city" id="city" placeholder="City">
+                                <div id="zip-sec">
+                                    <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Zip-Code">
+                                    <input type="text" name="state" id="state" placeholder="State">
+                                </div>
+                                <input type="button" value="submit" id="submit">
+
+                            </div>
+
+                            <!-- end of squeezed -->
+                            
                         </form>
                     </div>
                     <!-- end of form -->
@@ -169,7 +196,7 @@
             <div id="consultation-bg">
 
                 <!-- start of conatainer -->
-                <div class="contaier">
+                <div class="container">
 
                     <h1 id="consultation-header">Meet your new grounds crew<span id="consultaion-period">.</span></h1>
                     <h4 id="consultation-sub-header">Let's plan a time to chat about your yard.</h4>
