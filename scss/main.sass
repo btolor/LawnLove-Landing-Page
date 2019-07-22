@@ -63,16 +63,35 @@ $btm-bg-img: '../images/btm-yard.jpg'
     .menu-container
         background-color: $yellow
         +flex(flex,column)
-        width: 36%
+        width: 40%
         text-align: left
-        padding: 0 1% 
+        padding: 0 4% 
         height: 100vh
         a 
-            +font($text,3vw,600,$green)
+            +font($text,3.5vw,800,$green)
             text-decoration: none
-            padding: 3% 0
+            text-transform: uppercase
+            margin-bottom: 10% 
+            transition: 0.3s
+            &:hover
+                color: $green-action
+                border-left: 2px solid $green-action
+                padding-left: 6%
         #close
-            padding: 5% 0
+            padding: 5% 0 
+            margin: 10% 0 
+            font-weight: 900
+            &:hover
+                border-left: none
+        #mobile-menu-quote
+            +center(90%, 0 auto)
+            +btn(none,uppercase,$green,5%)
+            color: $yellow
+            text-align: center
+            &:hover
+                border-left: none
+                background-color: $green-action
+                padding-left: 5%
 #header
     text-align: center
     background-color: $yellow
@@ -144,14 +163,23 @@ $btm-bg-img: '../images/btm-yard.jpg'
             +center(95%,0 auto)
             display: flex
             flex-direction: row 
+            +media(600px)
+                flex-direction: column
             .squeeze-content
                 width: 60%
                 padding-left: 4%
                 padding-top: 3%
+                +media(600px)
+                    +center(90%, 0 auto)
+                    padding-top: 6%
                 #squeeze-slogan
                     +font($text,5vw,800,$w-text)
                     line-height: 1.4
                     padding-bottom: 6%
+                    +media(600px)
+                        font-size: 10vw
+                        +center(100%, 0 auto)
+                        padding-bottom: 8%
                     #squeeze-slogan-punctuation
                         color: $yellow
                 #squeeze-btn
@@ -161,35 +189,53 @@ $btm-bg-img: '../images/btm-yard.jpg'
                     background: $yellow
                     padding: 2% 7%
                     transition: 0.2s ease-out 
+                    +media(600px)
+                        padding: 4% 30%
+                        font-size: 3vw
                     &:hover
                         background: $yellow-action
                 .basic-serv
                     margin-top: 8%
                     padding-left: 5%
                     display: none
+                    +media(600px)
+                        +center(90%, 12% auto)
+                        padding-left: 0
                     #basics
                         +font($text,1.8vw,800,$w-text)
                         padding-bottom: 3%
+                        +media(600px)
+                            font-size: 7vw
                     p
-                        +font($text,1.4vw,600,$w-text)
+                        +font($text,1.4vw,700,$w-text)
                         margin-bottom: 2.5% 
+                        +media(600px)
+                            font-size: 4vw
                         span
-                            margin-right: 2%
+                            margin-right: 4%
                             color: $yellow
+                            font-weight: 900
             .form
                 width: 40%
                 background: white
                 padding: 6% 0
+                +media(600px)
+                    +center(100%, 0 auto)
+                    margin-top: 15% 
                 form
                     +center(80%,0 auto)
                     display: flex
                     flex-direction: column
                     #form-header
                         +font($text,2.5vw,800,$green)
+                        +media(600px)
+                            font-size: 6vw
                     #form-info
                         +font($text,1.2vw,600,$d-text)
                         line-height: 1.9
                         padding: 4% 0 10%
+                        +media(600px)
+                            font-size: 3vw
                     input
                         font-family: $text
                         font-size: 1.6vw
@@ -198,12 +244,15 @@ $btm-bg-img: '../images/btm-yard.jpg'
                         +center(99%, 0 auto)
                         margin-bottom: 3.4%
                         padding: 1% 0 1% 2%
+                        +media(600px)
+                            font-size: 4vw
                     a 
                         text-align: center
                         +font($text,1.4vw,800,$yellow)
                         +btn(none,uppercase,$green,2.5% 0)
                         +center(102%,5% 0)
-                        //display: none
+                        +media(600px)
+                            font-size: 4vw
                         &:hover
                             background-color: $green-action
                     .squeezed
@@ -221,9 +270,13 @@ $btm-bg-img: '../images/btm-yard.jpg'
                             +btn(none,uppercase,$green,2.5% 0)
                             +center(102%,5% 0)
                             border-radius: 0
+                            +media(600px)
+                                font-size: 4vw
                             &:hover
                                 background-color: $green-action
 .care
+    display: none
+    transition: 0.3s
     padding: 8% 0
     background-color: $yellow
     #care-header
@@ -286,6 +339,8 @@ $btm-bg-img: '../images/btm-yard.jpg'
                 +font($text,1.4vw,600,$d-text)
                 line-height: 1.8
 .history
+    display: none
+    transition: 0.3s
     .container
         +center(40%,0 auto)
         padding: 6% 0 12%
@@ -308,6 +363,8 @@ $btm-bg-img: '../images/btm-yard.jpg'
             &:hover
                 background-color: $green-action
 .consultation
+    display: none
+    transition: 0.3s
     +bg-img($btm-bg-img,100% 100%)
     #consultation-bg
         background-color: $green-Olay
@@ -332,6 +389,9 @@ $btm-bg-img: '../images/btm-yard.jpg'
     background: $green
     +font($text,1.3vw,500,$w-text)
     padding: 1% 0
+    +media(600px)
+        font-size: 3vw
+        padding: 2% 0
     #media-icons
         padding: 1.5% 0
         a
@@ -340,6 +400,9 @@ $btm-bg-img: '../images/btm-yard.jpg'
             font-size: 2vw
             margin: 0 1.5%
             transition: 0.2s ease-in-out
+            +media(600px)
+                font-size: 6vw
+                margin: 0 3%
             &:hover
                 color: $yellow
             

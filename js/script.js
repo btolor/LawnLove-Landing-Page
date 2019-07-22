@@ -12,6 +12,10 @@ $(document).ready(function () {
         $(".squeezed").show();
         //Displays the .basic-serv html element
         $(".basic-serv").show();
+
+        $(".care").show();
+        $(".history").show();
+        $(".consultation").show();
     });
 
 
