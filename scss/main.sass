@@ -44,13 +44,61 @@ $btm-bg-img: '../images/btm-yard.jpg'
     display: $flex
     flex-direction: $direction
 
+// Media Queries Mixin...
+=media($screen)
+    @media screen and (max-width: $screen)
+        @content
+    
+
 
 /*STYLES*/
+.mobile-menu
+    background-color: rgba(0,0,0,.7)
+    text-align: right
+    text-align: -webkit-right
+    position: fixed
+    right: -100vw
+    transition: 0.3s
+    +center(100%, 0 auto)
+    .menu-container
+        background-color: $yellow
+        +flex(flex,column)
+        width: 36%
+        text-align: left
+        padding: 0 1% 
+        height: 100vh
+        a 
+            +font($text,3vw,600,$green)
+            text-decoration: none
+            padding: 3% 0
+        #close
+            padding: 5% 0
 #header
     text-align: center
     background-color: $yellow
+    #mobile-menu-btn
+        display: none
+        text-align: center
+        width: 8%
+        border: 1px solid $green
+        position: absolute
+        font-size: 5.3vw
+        right: 5%
+        top: 5%
+        padding-top: .5%
+        border: 2px solid $green
+        border-radius: 4px
+        text-decoration: none
+        color: $green
+        +media(600px)
+            display: block
+        &:hover
+            color: $green-action
+            border-color: $green-action
     img
         width: 14%
+        +media(600px)
+            width: 45%
     .menu
         display: flex
         flex-direction: row
@@ -58,6 +106,8 @@ $btm-bg-img: '../images/btm-yard.jpg'
         +center(85%, 0 auto)
         position: relative
         top: -11vh
+        +media(600px)
+            display: none
         .left-menu
             width: 50%
             text-align: start
@@ -280,7 +330,7 @@ $btm-bg-img: '../images/btm-yard.jpg'
 .footer
     text-align: center
     background: $green
-    +font($text,1.5vw,500,$w-text)
+    +font($text,1.3vw,500,$w-text)
     padding: 1% 0
     #media-icons
         padding: 1.5% 0
@@ -289,5 +339,8 @@ $btm-bg-img: '../images/btm-yard.jpg'
             color: $w-text
             font-size: 2vw
             margin: 0 1.5%
+            transition: 0.2s ease-in-out
+            &:hover
+                color: $yellow
             
 

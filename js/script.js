@@ -13,4 +13,15 @@ $(document).ready(function () {
         //Displays the .basic-serv html element
         $(".basic-serv").show();
     });
+
+
+    $('#mobile-menu-btn').click(function () { 
+        $('#mobile-menu').css("right","0")
+        $('#mobile-menu-btn').hide()
+    });
+
+    $('#close').click(function () { 
+        $('#mobile-menu').css("right","-100vw")
+        $('#mobile-menu-btn').show()
+    });
 });
