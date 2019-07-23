@@ -63,31 +63,41 @@ $btm-bg-img: '../images/btm-yard.jpg'
     .menu-container
         background-color: $yellow
         +flex(flex,column)
-        width: 40%
+        width: 25%
         text-align: left
         padding: 0 4% 
         height: 100vh
+        +media(600px)
+            width: 40%
         a 
-            +font($text,3.5vw,800,$green)
+            +font($text,2.5vw,800,$green)
             text-decoration: none
             text-transform: uppercase
-            margin-bottom: 10% 
+            margin-bottom: 5% 
             transition: 0.3s
+            +media(600px)
+                font-size: 3.5vw
+                margin-bottom: 10% 
             &:hover
                 color: $green-action
-                border-left: 2px solid $green-action
-                padding-left: 6%
+                border-left: 3px solid $green-action
+                padding-left: 4%
         #close
             padding: 5% 0 
-            margin: 10% 0 
+            margin: 5% 0 
             font-weight: 900
+            +media(600px)
+                margin: 10% 0 
             &:hover
                 border-left: none
         #mobile-menu-quote
-            +center(90%, 0 auto)
+            +center(95%, 0 auto)
             +btn(none,uppercase,$green,5%)
             color: $yellow
             text-align: center
+            margin-top: 4vh
+            +media(600px)
+                width: 90%
             &:hover
                 border-left: none
                 background-color: $green-action
@@ -95,13 +105,17 @@ $btm-bg-img: '../images/btm-yard.jpg'
 #header
     text-align: center
     background-color: $yellow
+    +media(1024px)
+        text-align: left
+    +media(600px)
+        text-align: center
     #mobile-menu-btn
         display: none
         text-align: center
-        width: 8%
+        width: 5%
         border: 1px solid $green
         position: absolute
-        font-size: 5.3vw
+        font-size: 3vw
         right: 5%
         top: 5%
         padding-top: .5%
@@ -109,13 +123,20 @@ $btm-bg-img: '../images/btm-yard.jpg'
         border-radius: 4px
         text-decoration: none
         color: $green
-        +media(600px)
+        +media(1024px)
             display: block
+        +media(600px)
+            font-size: 5.3vw
+            width: 8%
         &:hover
             color: $green-action
             border-color: $green-action
     img
         width: 14%
+        +media(1024px)
+            text-align: left
+            padding-left: 4%
+            width: 15%
         +media(600px)
             width: 45%
     .menu
@@ -125,7 +146,7 @@ $btm-bg-img: '../images/btm-yard.jpg'
         +center(85%, 0 auto)
         position: relative
         top: -11vh
-        +media(600px)
+        +media(1024px)
             display: none
         .left-menu
             width: 50%
@@ -282,84 +303,147 @@ $btm-bg-img: '../images/btm-yard.jpg'
     #care-header
         +font($text,4vw,800,$green)
         text-align: center
+        +media(600px)
+            font-size: 8vw
     #care-sub-header
         +font($text,1.4vw,600,$d-text)
         text-align: center
         padding: 2% 0 8%
+        +media(600px)
+            font-size: 2.7vw
     .services
         +center(85%,0 auto)
         +flex(flex,row)
         justify-content: space-between
+        +media(600px)
+            flex-direction: column
         .grass-weeds
             width: 24%
             text-align: center
             padding: 0 1%
+            +media(600px)
+                width: 100%
             img 
                 width: 30%
+                +media(600px)
+                    width: 25%
             #grass-weeds-header
                 +font($text,1.8vw,800,$green)
                 padding: 8% 0
+                +media(600px)
+                    font-size: 4vw
+                    padding: 4% 0
             #grass-weeds-info
                 +font($text,1.4vw,600,$d-text)
                 line-height: 1.8
+                +media(600px)
+                    font-size: 2.7vw
+                    padding-bottom: 14%
         .mowing
             width: 24%
             text-align: center
             padding: 0 1%
+            +media(600px)
+                width: 100%
             img 
                 width: 30%
+                +media(600px)
+                    width: 25%
             #mowing-header
                 +font($text,1.8vw,800,$green)
                 padding: 8% 0
+                +media(600px)
+                    font-size: 4vw
+                    padding: 4% 0
             #mowing-info
                 +font($text,1.4vw,600,$d-text)
                 line-height: 1.8
+                +media(600px)
+                    font-size: 2.7vw
+                    padding-bottom: 14%
         .landscape
             width: 24%
             text-align: center
             padding: 0 1%
+            +media(600px)
+                width: 100%
             img 
                 width: 30%
+                +media(600px)
+                    width: 25%
             #landscape-header
                 +font($text,1.8vw,800,$green)
                 padding: 8% 0
+                +media(600px)
+                    font-size: 4vw
+                    padding: 4% 0
             #landscape-info
                 +font($text,1.4vw,600,$d-text)
                 line-height: 1.8
+                +media(600px)
+                    font-size: 2.7vw
+                    padding-bottom: 14%
         .watering
             width: 24%
             text-align: center
             padding: 0 1%
+            +media(600px)
+                width: 100%
             img 
                 width: 30%
+                +media(600px)
+                    width: 25%
             #watering-header
                 +font($text,1.8vw,800,$green)
                 padding: 8% 0
+                +media(600px)
+                    font-size: 4vw
+                    padding: 4% 0
             #watering-info
                 +font($text,1.4vw,600,$d-text)
                 line-height: 1.8
+                +media(600px)
+                    font-size: 2.7vw
+                    padding-bottom: 14%
 .history
     display: none
     transition: 0.3s
     .container
         +center(40%,0 auto)
         padding: 6% 0 12%
+        +media(600px)
+            +center(90%, 0 auto)
+            padding: 8% 0 16%
         #history-header
             text-align: center
             +font($text,3.5vw,800,$green)
             padding-bottom: 3.7%
+            +media(600px)
+                text-align: left
+                font-size: 8vw
         #history-infoA
             +font($text,1.4vw,600,$d-text)
             line-height: 1.8
             padding-bottom: 3.7%
+            +media(600px)
+                font-size: 2.7vw
+                line-height: 2
+                padding-bottom: 4.5%
         #history-infoB
             +font($text,1.4vw,600,$d-text)
             line-height: 1.8
+            +media(600px)
+                font-size: 2.7vw
+                line-height: 2
+                padding-bottom: 2%
         #history-btn
             +btn(none,uppercase,$green,2.5% 5%)
             +font($text,1.4vw,800,$yellow)
             position: relative 
             top: 8vh
+            +media(600px)
+                padding: 2.5% 32%
+                font-size: 3vw
             &:hover
                 background-color: $green-action
 .consultation
@@ -371,17 +455,27 @@ $btm-bg-img: '../images/btm-yard.jpg'
         .container
             text-align: center
             padding: 8% 0
+            +media(600px)
+                padding: 30% 0
             #consultation-header
                 +font($text,3.7vw,800,$w-text)
+                +media(600px)
+                    font-size: 7vw
                 span
                     color: $yellow
             #consultation-sub-header
                 +font($text,1.4vw,600,$w-text)
                 padding: 3% 0
+                +media(600px)
+                    font-size: 2.7vw
+                    padding-bottom: 6%
             #consultation-btn
                 text-align: center
                 +font($text,1.2vw,800,$green)
                 +btn(none,uppercase,$yellow,1% 1.5%)
+                +media(600px)
+                    font-size: 2.7vw
+                    padding: 2% 3%
                 &:hover
                     background-color: $yellow-action
 .footer
@@ -401,9 +495,12 @@ $btm-bg-img: '../images/btm-yard.jpg'
             margin: 0 1.5%
             transition: 0.2s ease-in-out
             +media(600px)
-                font-size: 6vw
+                font-size: 4vw
                 margin: 0 3%
             &:hover
                 color: $yellow
+    #copy-rights
+        +media(600px)
+            font-size: 2vw
             
 

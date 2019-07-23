@@ -15,36 +15,52 @@
   background-color: #E8FE15;
   display: flex;
   flex-direction: column;
-  width: 40%;
+  width: 25%;
   text-align: left;
   padding: 0 4%;
   height: 100vh;
 }
+@media screen and (max-width: 600px) {
+  .mobile-menu .menu-container {
+    width: 40%;
+  }
+}
 .mobile-menu .menu-container a {
   font-family: "Open Sans", sans-serif;
-  font-size: 3.5vw;
+  font-size: 2.5vw;
   font-weight: 800;
   color: #1C6B1C;
   text-decoration: none;
   text-transform: uppercase;
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   transition: 0.3s;
+}
+@media screen and (max-width: 600px) {
+  .mobile-menu .menu-container a {
+    font-size: 3.5vw;
+    margin-bottom: 10%;
+  }
 }
 .mobile-menu .menu-container a:hover {
   color: #103d10;
-  border-left: 2px solid #103d10;
-  padding-left: 6%;
+  border-left: 3px solid #103d10;
+  padding-left: 4%;
 }
 .mobile-menu .menu-container #close {
   padding: 5% 0;
-  margin: 10% 0;
+  margin: 5% 0;
   font-weight: 900;
+}
+@media screen and (max-width: 600px) {
+  .mobile-menu .menu-container #close {
+    margin: 10% 0;
+  }
 }
 .mobile-menu .menu-container #close:hover {
   border-left: none;
 }
 .mobile-menu .menu-container #mobile-menu-quote {
-  width: 90%;
+  width: 95%;
   margin: 0 auto;
   text-decoration: none;
   text-transform: uppercase;
@@ -52,6 +68,12 @@
   padding: 5%;
   color: #E8FE15;
   text-align: center;
+  margin-top: 4vh;
+}
+@media screen and (max-width: 600px) {
+  .mobile-menu .menu-container #mobile-menu-quote {
+    width: 90%;
+  }
 }
 .mobile-menu .menu-container #mobile-menu-quote:hover {
   border-left: none;
@@ -63,13 +85,23 @@
   text-align: center;
   background-color: #E8FE15;
 }
+@media screen and (max-width: 1024px) {
+  #header {
+    text-align: left;
+  }
+}
+@media screen and (max-width: 600px) {
+  #header {
+    text-align: center;
+  }
+}
 #header #mobile-menu-btn {
   display: none;
   text-align: center;
-  width: 8%;
+  width: 5%;
   border: 1px solid #1C6B1C;
   position: absolute;
-  font-size: 5.3vw;
+  font-size: 3vw;
   right: 5%;
   top: 5%;
   padding-top: 0.5%;
@@ -78,9 +110,15 @@
   text-decoration: none;
   color: #1C6B1C;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   #header #mobile-menu-btn {
     display: block;
+  }
+}
+@media screen and (max-width: 600px) {
+  #header #mobile-menu-btn {
+    font-size: 5.3vw;
+    width: 8%;
   }
 }
 #header #mobile-menu-btn:hover {
@@ -89,6 +127,13 @@
 }
 #header img {
   width: 14%;
+}
+@media screen and (max-width: 1024px) {
+  #header img {
+    text-align: left;
+    padding-left: 4%;
+    width: 15%;
+  }
 }
 @media screen and (max-width: 600px) {
   #header img {
@@ -104,7 +149,7 @@
   position: relative;
   top: -11vh;
 }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1024px) {
   #header .menu {
     display: none;
   }
@@ -386,6 +431,11 @@
   color: #1C6B1C;
   text-align: center;
 }
+@media screen and (max-width: 600px) {
+  .care #care-header {
+    font-size: 8vw;
+  }
+}
 .care #care-sub-header {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
@@ -394,6 +444,11 @@
   text-align: center;
   padding: 2% 0 8%;
 }
+@media screen and (max-width: 600px) {
+  .care #care-sub-header {
+    font-size: 2.7vw;
+  }
+}
 .care .services {
   width: 85%;
   margin: 0 auto;
@@ -401,13 +456,28 @@
   flex-direction: row;
   justify-content: space-between;
 }
+@media screen and (max-width: 600px) {
+  .care .services {
+    flex-direction: column;
+  }
+}
 .care .services .grass-weeds {
   width: 24%;
   text-align: center;
   padding: 0 1%;
 }
+@media screen and (max-width: 600px) {
+  .care .services .grass-weeds {
+    width: 100%;
+  }
+}
 .care .services .grass-weeds img {
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .care .services .grass-weeds img {
+    width: 25%;
+  }
 }
 .care .services .grass-weeds #grass-weeds-header {
   font-family: "Open Sans", sans-serif;
@@ -416,6 +486,12 @@
   color: #1C6B1C;
   padding: 8% 0;
 }
+@media screen and (max-width: 600px) {
+  .care .services .grass-weeds #grass-weeds-header {
+    font-size: 4vw;
+    padding: 4% 0;
+  }
+}
 .care .services .grass-weeds #grass-weeds-info {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
@@ -423,13 +499,29 @@
   color: #262626;
   line-height: 1.8;
 }
+@media screen and (max-width: 600px) {
+  .care .services .grass-weeds #grass-weeds-info {
+    font-size: 2.7vw;
+    padding-bottom: 14%;
+  }
+}
 .care .services .mowing {
   width: 24%;
   text-align: center;
   padding: 0 1%;
 }
+@media screen and (max-width: 600px) {
+  .care .services .mowing {
+    width: 100%;
+  }
+}
 .care .services .mowing img {
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .care .services .mowing img {
+    width: 25%;
+  }
 }
 .care .services .mowing #mowing-header {
   font-family: "Open Sans", sans-serif;
@@ -438,6 +530,12 @@
   color: #1C6B1C;
   padding: 8% 0;
 }
+@media screen and (max-width: 600px) {
+  .care .services .mowing #mowing-header {
+    font-size: 4vw;
+    padding: 4% 0;
+  }
+}
 .care .services .mowing #mowing-info {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
@@ -445,13 +543,29 @@
   color: #262626;
   line-height: 1.8;
 }
+@media screen and (max-width: 600px) {
+  .care .services .mowing #mowing-info {
+    font-size: 2.7vw;
+    padding-bottom: 14%;
+  }
+}
 .care .services .landscape {
   width: 24%;
   text-align: center;
   padding: 0 1%;
 }
+@media screen and (max-width: 600px) {
+  .care .services .landscape {
+    width: 100%;
+  }
+}
 .care .services .landscape img {
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .care .services .landscape img {
+    width: 25%;
+  }
 }
 .care .services .landscape #landscape-header {
   font-family: "Open Sans", sans-serif;
@@ -460,6 +574,12 @@
   color: #1C6B1C;
   padding: 8% 0;
 }
+@media screen and (max-width: 600px) {
+  .care .services .landscape #landscape-header {
+    font-size: 4vw;
+    padding: 4% 0;
+  }
+}
 .care .services .landscape #landscape-info {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
@@ -467,13 +587,29 @@
   color: #262626;
   line-height: 1.8;
 }
+@media screen and (max-width: 600px) {
+  .care .services .landscape #landscape-info {
+    font-size: 2.7vw;
+    padding-bottom: 14%;
+  }
+}
 .care .services .watering {
   width: 24%;
   text-align: center;
   padding: 0 1%;
 }
+@media screen and (max-width: 600px) {
+  .care .services .watering {
+    width: 100%;
+  }
+}
 .care .services .watering img {
   width: 30%;
+}
+@media screen and (max-width: 600px) {
+  .care .services .watering img {
+    width: 25%;
+  }
 }
 .care .services .watering #watering-header {
   font-family: "Open Sans", sans-serif;
@@ -482,12 +618,24 @@
   color: #1C6B1C;
   padding: 8% 0;
 }
+@media screen and (max-width: 600px) {
+  .care .services .watering #watering-header {
+    font-size: 4vw;
+    padding: 4% 0;
+  }
+}
 .care .services .watering #watering-info {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
   font-weight: 600;
   color: #262626;
   line-height: 1.8;
+}
+@media screen and (max-width: 600px) {
+  .care .services .watering #watering-info {
+    font-size: 2.7vw;
+    padding-bottom: 14%;
+  }
 }
 
 .history {
@@ -499,6 +647,13 @@
   margin: 0 auto;
   padding: 6% 0 12%;
 }
+@media screen and (max-width: 600px) {
+  .history .container {
+    width: 90%;
+    margin: 0 auto;
+    padding: 8% 0 16%;
+  }
+}
 .history .container #history-header {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -506,6 +661,12 @@
   font-weight: 800;
   color: #1C6B1C;
   padding-bottom: 3.7%;
+}
+@media screen and (max-width: 600px) {
+  .history .container #history-header {
+    text-align: left;
+    font-size: 8vw;
+  }
 }
 .history .container #history-infoA {
   font-family: "Open Sans", sans-serif;
@@ -515,12 +676,26 @@
   line-height: 1.8;
   padding-bottom: 3.7%;
 }
+@media screen and (max-width: 600px) {
+  .history .container #history-infoA {
+    font-size: 2.7vw;
+    line-height: 2;
+    padding-bottom: 4.5%;
+  }
+}
 .history .container #history-infoB {
   font-family: "Open Sans", sans-serif;
   font-size: 1.4vw;
   font-weight: 600;
   color: #262626;
   line-height: 1.8;
+}
+@media screen and (max-width: 600px) {
+  .history .container #history-infoB {
+    font-size: 2.7vw;
+    line-height: 2;
+    padding-bottom: 2%;
+  }
 }
 .history .container #history-btn {
   text-decoration: none;
@@ -533,6 +708,12 @@
   color: #E8FE15;
   position: relative;
   top: 8vh;
+}
+@media screen and (max-width: 600px) {
+  .history .container #history-btn {
+    padding: 2.5% 32%;
+    font-size: 3vw;
+  }
 }
 .history .container #history-btn:hover {
   background-color: #103d10;
@@ -551,11 +732,21 @@
   text-align: center;
   padding: 8% 0;
 }
+@media screen and (max-width: 600px) {
+  .consultation #consultation-bg .container {
+    padding: 30% 0;
+  }
+}
 .consultation #consultation-bg .container #consultation-header {
   font-family: "Open Sans", sans-serif;
   font-size: 3.7vw;
   font-weight: 800;
   color: #ffffff;
+}
+@media screen and (max-width: 600px) {
+  .consultation #consultation-bg .container #consultation-header {
+    font-size: 7vw;
+  }
 }
 .consultation #consultation-bg .container #consultation-header span {
   color: #E8FE15;
@@ -567,6 +758,12 @@
   color: #ffffff;
   padding: 3% 0;
 }
+@media screen and (max-width: 600px) {
+  .consultation #consultation-bg .container #consultation-sub-header {
+    font-size: 2.7vw;
+    padding-bottom: 6%;
+  }
+}
 .consultation #consultation-bg .container #consultation-btn {
   text-align: center;
   font-family: "Open Sans", sans-serif;
@@ -577,6 +774,12 @@
   text-transform: uppercase;
   background: #E8FE15;
   padding: 1% 1.5%;
+}
+@media screen and (max-width: 600px) {
+  .consultation #consultation-bg .container #consultation-btn {
+    font-size: 2.7vw;
+    padding: 2% 3%;
+  }
 }
 .consultation #consultation-bg .container #consultation-btn:hover {
   background-color: #899801;
@@ -609,12 +812,17 @@
 }
 @media screen and (max-width: 600px) {
   .footer #media-icons a {
-    font-size: 6vw;
+    font-size: 4vw;
     margin: 0 3%;
   }
 }
 .footer #media-icons a:hover {
   color: #E8FE15;
+}
+@media screen and (max-width: 600px) {
+  .footer #copy-rights {
+    font-size: 2vw;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -16,6 +16,7 @@ $(document).ready(function () {
         $(".care").show();
         $(".history").show();
         $(".consultation").show();
+        check_name()
     });
 
 
@@ -28,4 +29,17 @@ $(document).ready(function () {
         $('#mobile-menu').css("right","-100vw")
         $('#mobile-menu-btn').show()
     });
+
+    function check_name(){
+        var name = $('#f-name').val();
+        var nameVal = /^[a-zA-Z]*$/;
+        if(nameVal.test(name) && name != ""){
+            $('#f-name').css('background-color','green');
+        }else{
+            $('#f-name').css('background-color','red');
+        }
+    }
+
+
+
 });
