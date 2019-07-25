@@ -195,7 +195,7 @@
 }
 
 .squeeze-page {
-  background-image: url("../images/top-bg-img.jpg");
+  background-image: url("https://i.postimg.cc/brqHtLdW/top-bg-img.jpg");
   background-size: 100% 100%;
 }
 .squeeze-page #squeeze-bg {
@@ -354,13 +354,22 @@
   border: 0.8px solid #262626;
   width: 99%;
   margin: 0 auto;
-  margin-bottom: 3.4%;
+  margin-top: 3.4%;
   padding: 1% 0 1% 2%;
 }
 @media screen and (max-width: 600px) {
   .squeeze-page #squeeze-bg .container .form form input {
     font-size: 4vw;
   }
+}
+.squeeze-page #squeeze-bg .container .form form span {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1vw;
+  font-weight: 600;
+  color: red;
+  font-style: italic;
+  padding-top: 1%;
+  display: none;
 }
 .squeeze-page #squeeze-bg .container .form form a {
   text-align: center;
@@ -389,12 +398,29 @@
 .squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec {
   display: flex;
   flex-direction: row;
+  margin-top: 2.4%;
 }
-.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec #zip {
-  width: 30%;
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .zip {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
 }
-.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec #state {
-  width: 30%;
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .zip #zip {
+  width: 80%;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .zip #zip-error {
+  text-align: center;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .state {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .state #state {
+  width: 80%;
+}
+.squeeze-page #squeeze-bg .container .form form .squeezed #zip-sec .state #state-error {
+  text-align: center;
 }
 .squeeze-page #squeeze-bg .container .form form .squeezed #submit {
   font-family: "Open Sans", sans-serif;
@@ -722,7 +748,7 @@
 .consultation {
   display: none;
   transition: 0.3s;
-  background-image: url("../images/btm-yard.jpg");
+  background-image: url("https://i.postimg.cc/g0wMzM6K/btm-yard.jpg");
   background-size: 100% 100%;
 }
 .consultation #consultation-bg {

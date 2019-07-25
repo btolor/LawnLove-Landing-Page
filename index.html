@@ -15,8 +15,6 @@
         <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
         <!-- JQUERY CDN -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- JQUERY VALIDATION CDN -->
-        <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.1/dist/jquery.validate.js"></script>
         <!-- JS -->
         <script src="js/script.js"></script>
     </head>
@@ -42,7 +40,7 @@
         <section id="header">
 
             <a href="#" id="mobile-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            <img src="images/logo.png" alt="Lawn Love Logo">
+            <img src="https://i.postimg.cc/kXnf6MbG/logo.png" alt="Lawn Love Logo">
 
             <!-- Start of menu -->
             <div class="menu" id="menu">
@@ -96,13 +94,15 @@
 
                     <!-- start of form -->
                     <div class="form">
-                        <form action="POST">
+                        <form id="news-form">
                             <h1 id="form-header">Get a free quote.</h1>
                             <p id="form-info">
-                                Fill out our form and one of our specialists <br>will reach out with a quote within 24 hours.
+                                Sign up for to promotional and informative monthly news letter and receive a free quote.
                             </p>
                             <input type="text" name="name" id="f-name" placeholder="First Name">
+                            <span id="name-error">* Please enter a valid name i.e "Bob..."</span>
                             <input type="email" name="email" id="email" placeholder="E-mail">
+                            <span id="email-error">* Please enter a valid Email Address...</span>
                             <a href="#squeeze-slogan" id="form-btn">submit</a>
                             
                             <!-- start of squeezed -->
@@ -110,12 +110,27 @@
                             <div class="squeezed">
 
                                 <input type="text" name="address" id="address" placeholder="Address">
+                                <span id="address-error">* Please enter a valid Address...</span>
                                 <input type="text" name="city" id="city" placeholder="City">
+                                <span id="city-error">* Please enter a valid City...</span>
                                 <div id="zip-sec">
-                                    <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Zip-Code">
-                                    <input type="text" name="state" id="state" placeholder="State">
+
+                                    <!-- start of zip -->
+                                    <div class="zip">
+                                        <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Zip-Code">
+                                        <span id="zip-error">* Enter valid Zip-Code...</span>
+                                    </div>
+                                    <!-- end of zip -->
+
+                                    <!-- start of state -->
+                                    <div class="state">
+                                        <input type="text" name="state" id="state" placeholder="State">
+                                        <span id="state-error">* Enter valid State...</span>
+                                    </div>
+                                    <!-- start of state -->
+                                    
                                 </div>
-                                <input type="button" value="submit" id="submit">
+                                <input type="submit" value="submit" id="submit">
 
                             </div>
 
@@ -145,7 +160,7 @@
 
                 <!-- start of grass-weeds -->
                 <div class="grass-weeds" id="grass-weeds">
-                    <img src="images/grass-leaves.png" alt="grass logo">
+                    <img src="https://i.postimg.cc/cCch92Vd/grass-leaves.png" alt="grass logo">
                     <h2 id="grass-weeds-header">Grass & Weeds</h2>
                     <p id="grass-weeds-info">
                         We'll separate the good from the bad, and treat your lawn with our non-toxic fertilizer.
@@ -155,7 +170,7 @@
 
                 <!-- start of mowing -->
                 <div class="mowing" id="mowing">
-                    <img src="images/lawn-mower.png" alt="Lawn mower logo">
+                    <img src="https://i.postimg.cc/MGh9vy7J/lawn-mower.png" alt="Lawn mower logo">
                     <h2 id="mowing-header">Mowing & Whacking</h2>
                     <p id="mowing-info">
                         Nothing beats a fresh cut. We go above and beyond with our complete line of Toro equipment.
@@ -165,7 +180,7 @@
 
                 <!-- start of landscape -->
                 <div class="landscape" id="landscape">
-                    <img src="images/plant.png" alt="Landscaping logo">
+                    <img src="https://i.postimg.cc/Wpm51qtx/plant.png" alt="Landscaping logo">
                     <h2 id="landscape-header">Landscaping Design</h2>
                     <p id="landscape-info">
                         From flowers to fire pits. Each of our specialists has a background in landscpaing design. 
@@ -175,7 +190,7 @@
 
                 <!-- start of watering -->
                 <div class="watering" id="watering">
-                    <img src="images/water-hose.png" alt="Watering logo">
+                    <img src="https://i.postimg.cc/RhmGT4pP/water-hose.png" alt="Watering logo">
                     <h2 id="watering-header">Watering Solutions</h2>
                     <p id="watering-info">
                         We'll help you grow it, and keep it growing with our eco-friendly watering methods.

@@ -12,8 +12,8 @@ $d-text: #262626
 $w-text: #ffffff
 
 //Backgrounds...
-$top-bg-img: '../images/top-bg-img.jpg'
-$btm-bg-img: '../images/btm-yard.jpg'
+$top-bg-img: 'https://i.postimg.cc/brqHtLdW/top-bg-img.jpg'
+$btm-bg-img: 'https://i.postimg.cc/g0wMzM6K/btm-yard.jpg'
 
 /*MIXINS*/
 //Center
@@ -263,10 +263,15 @@ $btm-bg-img: '../images/btm-yard.jpg'
                         border-radius: 4px
                         border: .8px solid $d-text
                         +center(99%, 0 auto)
-                        margin-bottom: 3.4%
+                        margin-top: 3.4%
                         padding: 1% 0 1% 2%
                         +media(600px)
                             font-size: 4vw
+                    span
+                        +font($text,1vw,600,red)
+                        font-style: italic
+                        padding-top: 1%
+                        display: none
                     a 
                         text-align: center
                         +font($text,1.4vw,800,$yellow)
@@ -279,13 +284,22 @@ $btm-bg-img: '../images/btm-yard.jpg'
                     .squeezed
                         display: none
                         #zip-sec
-                            display: flex
-                            flex-direction: row
-
-                            #zip
-                                width: 30%
-                            #state
-                                width: 30%
+                            +flex(flex, row)
+                            margin-top: 2.4%
+                            .zip
+                                +flex(flex, column)
+                                width: 50%
+                                #zip
+                                    width: 80%
+                                #zip-error
+                                    text-align: center
+                            .state
+                                +flex(flex, column)
+                                width: 50%
+                                #state
+                                    width: 80%
+                                #state-error
+                                    text-align: center
                         #submit
                             +font($text,1.4vw,800,$yellow)
                             +btn(none,uppercase,$green,2.5% 0)
