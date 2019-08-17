@@ -366,4 +366,81 @@ $(document).ready(function () {
         }
     }
 
+    $("#home-page-link").click(function () { 
+        $('.squeeze-page').show();
+        $('.services-page').hide();
+        $('.contact-page').hide();
+        $('.about-page').hide();
+    });
+
+    $('#about-link').click(function () { 
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.services-page').hide();
+        $('.contact-page').hide();
+        $('.about-page').show();
+    });
+    $('#about-mobile-link').click(function () { 
+        //#mobile-menu element's css modified...
+        $('#mobile-menu').css("right","-100vw")
+        //#mobile-menu-btn element displayed...
+        $('#mobile-menu-btn').show()
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.services-page').hide();
+        $('.contact-page').hide();
+        $('.about-page').show();
+    });
+ 
+    $('#services-link').click(function () { 
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.about-page').hide();
+        $('.contact-page').hide();
+        $('.services-page').show();
+    });
+    $('#services-mobile-link').click(function () { 
+        //#mobile-menu element's css modified...
+        $('#mobile-menu').css("right","-100vw")
+        //#mobile-menu-btn element displayed...
+        $('#mobile-menu-btn').show()
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.about-page').hide();
+        $('.contact-page').hide();
+        $('.services-page').show();
+    });
+
+    $('#contact-link').click(function () { 
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.about-page').hide();
+        $('.services-page').hide();
+        $('.contact-page').show();
+    });
+    $('#contact-mobile-link').click(function () { 
+        //#mobile-menu element's css modified...
+        $('#mobile-menu').css("right","-100vw")
+        //#mobile-menu-btn element displayed...
+        $('#mobile-menu-btn').show()
+        $('.squeeze-page').hide();
+        $('.squeeze-page').hide();
+        $('.care').hide();
+        $('.history').hide();
+        $('.consultation').hide();
+        $('.about-page').hide();
+        $('.services-page').hide();
+        $('.contact-page').show();
+    });
+
 });
