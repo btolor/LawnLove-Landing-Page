@@ -17,9 +17,9 @@ $btm-bg-img: 'https://i.postimg.cc/g0wMzM6K/btm-yard.jpg'
 $about-banner: 'https://i.postimg.cc/4xq1tf8k/about-banner.jpg'
 $services-banner: 'https://i.postimg.cc/jd8cxQPj/contact-banner.jpg'
 $contact-banner: 'https://i.postimg.cc/rwKJK0NN/services.jpg'
-$promise-bg: "../images/promise.jpg"
-$services-page-banner: "../images/service-img.jpg"
-$contact-banner-bg: "../images/contact-banner.jpg"
+$promise-bg: "https://i.postimg.cc/BnYDczwx/promise.jpg"
+$services-page-banner: "https://i.postimg.cc/tJqCcqs7/service-img.jpg"
+$contact-banner-bg: "https://i.postimg.cc/4dT3zbZ6/contact-banner.jpg"
 
 /*MIXINS*/
 //Center
@@ -88,10 +88,10 @@ $contact-banner-bg: "../images/contact-banner.jpg"
                 color: $green-action
                 border-left: 3px solid $green-action
                 padding-left: 4%
-            .mobile-selected
-                color: $green-action
-                border-left: 3px solid $green-action
-                padding-left: 4%
+        .mobile-selected
+            color: $green-action
+            border-left: 3px solid $green-action
+            padding-left: 4%
         #close
             padding: 5% 0 
             margin: 5% 0 
@@ -105,9 +105,10 @@ $contact-banner-bg: "../images/contact-banner.jpg"
             +btn(none,uppercase,$green,5%)
             color: $yellow
             text-align: center
-            margin-top: 4vh
+            margin-top: 1vh
             +media(600px)
-                width: 90%
+                width: 98% !important
+                font-size: 2.9vw
             &:hover
                 border-left: none
                 background-color: $green-action
@@ -191,7 +192,7 @@ $contact-banner-bg: "../images/contact-banner.jpg"
         .right-menu
             width: 50%
             text-align: end
-            #quote
+            #menu-quote
                 text-decoration: none
                 text-transform: uppercase
                 +font($text,1.4vw,800,$yellow)
@@ -866,11 +867,36 @@ $contact-banner-bg: "../images/contact-banner.jpg"
         +center(50%,0 auto)
         +flex(flex, column)
         padding: 6% 0
+        +media(600px)
+            width: 75% 
         #contact-page-form-info
             text-align: center
             +font($text,18px,600,$d-text)
             line-height: 2
             padding-bottom: 6%
+        label
+            padding-bottom: .4%
+            +font($text,20px,400,rgb(76,81,93,1))
+        input, textarea
+            margin-bottom: 1.5%
+            +font($text,19px,400,$d-text)
+            padding: .4% 0 .4% .7%
+            border-radius: 4px
+            border: 1px solid rgb(76,81,93)
+        #contact-page-form-btn
+            border-radius: 0
+            text-transform: uppercase
+            color: $yellow
+            background: $green
+            background-color: $green
+            padding: 2% 0
+            font-size: 22px
+            font-weight: 700
+            transition: .3s
+            margin-top: .5%
+            &:hover
+                background: $green-action
+                background-color: $green-action
 .footer
     text-align: center
     background: $green
@@ -899,5 +925,125 @@ $contact-banner-bg: "../images/contact-banner.jpg"
                 font-size: 1.6vw
         +media(600px)
             font-size: 2vw
-            
-
+.quote-pop-up
+    background: rgba(0, 0, 0, .7)
+    background-color: rgba(0, 0, 0, .7)
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    display: none
+    justify-content: center
+    align-items: center
+    transition: 0.3s
+    .quote
+        background: white
+        background-color: white
+        width: 50%
+        padding: 8% 6% 5%
+        position: relative
+        +media(600px)
+            width: 85%
+            padding: 12% 8% 8%
+        #quote-close-btn
+            text-decoration: none
+            color: $green-Olay
+            font-size: 3vw
+            transition: 0.3s
+            position: absolute
+            top: 20px 
+            right: 20px
+            &:hover
+                color: $yellow
+            +media(600px)
+                font-size: 5vw
+        #quote-title
+            text-align: center
+            +font($text,3.6vw,800,$green)
+            +media(600px)
+                font-size: 5.9vw
+        #quote-mesg
+            text-align: center
+            +font($text,1.6vw,500,black)
+            padding: 5% 0 6%
+            +media(600px)
+                font-size: 2.9vw
+        #quote-form
+            +flex(flex,column)
+            input
+                margin: 1% 0
+                +font($text,1.6vw,500,$d-text)
+                padding: .4% 0 .4% .7%
+                border-radius: 4px
+                border: 1px solid rgb(76,81,93)
+                +media(600px)
+                    font-size: 2.9vw
+            #quote-form-btn
+                border-radius: 0
+                text-transform: uppercase
+                color: $yellow
+                background: $green
+                background-color: $green
+                padding: 1.8% 0
+                font-size: 1.5vw
+                font-weight: 700
+                transition: .3s
+                margin-top: 1%
+                &:hover
+                    background: $green-action
+                    background-color: $green-action
+                +media(600px)
+                    font-size: 3vw
+            span
+                +font($text,1vw,600,red)
+                font-style: italic
+                display: none
+.schedule-pop-up
+    background: rgba(0, 0, 0, .7)
+    background-color: rgba(0, 0, 0, .7)
+    width: 100%
+    height: 100%
+    position: absolute
+    top: 0
+    display: none
+    justify-content: center
+    align-items: center
+    transition: 0.3s 
+    .schedule-container
+        background: white
+        background-color: white
+        width: 50%
+        padding: 8% 6% 5%
+        position: relative
+        +media(600px)
+            width: 85%
+            padding: 12% 8% 8%
+        #schedule-close-btn
+            text-decoration: none
+            color: $green-Olay
+            font-size: 3vw
+            transition: 0.3s
+            position: absolute
+            top: 20px 
+            right: 20px
+            &:hover
+                color: $yellow
+            +media(600px)
+                font-size: 5vw
+        #thankyou-title
+            text-align: center
+            +font($text,3.6vw,800,$green)
+            +media(600px)
+                font-size: 5.9vw
+        #thankyou-msg
+            text-align: center
+            +font($text,1.6vw,500,black)
+            padding: 5% 0 6%
+            +media(600px)
+                font-size: 2.9vw
+        #thanks
+            text-align: center
+            +font($text,1.6vw,700,$green)
+            padding: 6% 0 6%
+            +media(600px)
+                font-size: 2.9vw
