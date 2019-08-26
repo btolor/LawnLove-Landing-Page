@@ -851,6 +851,14 @@ $(document).ready(function () {
         //Programmer's message to the console confirming the schedule pop-up displayed...
         console.log("The schedule pop-up displayed.")
     });
+    
+    $('#about-page-btm-banner-btn').click(function () { 
+        //Changes the css for the #quote-pop-up element...
+        $('.schedule-pop-up').css("display","flex");
+        //Programmer's message to the console confirming the schedule pop-up displayed...
+        console.log("The schedule pop-up displayed.")
+    });
+    
 
     /**The click event for the #services-page-btm-banner-btn changes the css for the 
      * .schedule-pop-up to display its contents... */
