@@ -533,6 +533,10 @@ $(document).ready(function () {
     $("#home-page-link").click(function () { 
         //Shows the .squeeze-page element..
         $('.squeeze-page').show();
+        $('.care').show();
+        $('.services').show();
+        $('.history').show();
+        $('.consultation').show();
         //Hides the .services-page element...
         $('.services-page').hide();
         //Hides the .contact-page element...

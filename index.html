@@ -1,497 +1,310 @@
-<!DOCTYPE html> 
-<html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Lawn Love</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <!-- FONTS -->
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
-        <!-- CSS -->
-        <link rel="stylesheet" href="css/reset.css">
-        <link rel="stylesheet" href="css/main.css">
-        <!-- ICONS -->
-        <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
-        <!-- JQUERY CDN -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-        <!-- JS -->
-        <script src="js/script.js"></script>
-    </head>
-    <body>
-
-        <!-- start of mobile-menu -->
-        <div class="mobile-menu" id="mobile-menu">
-
-            <!-- start of menu-container -->
-            <div class="menu-container" id="menu-container">
-                <a href="#" id="close">X</a>
-                <a href="#" id="about-mobile-link">about</a>
-                <a href="#" id="services-mobile-link">services</a>
-                <a href="#" id="contact-mobile-link">contact</a>
-                <a href="#" id="mobile-menu-quote">get a free quote</a>
-            </div>
-            <!-- end of menu-container -->
-
-        </div>
-        <!-- end of mobile-menu -->
-
-        <!-- Start of header -->
-        <div id="header">
-
-            <a href="#" id="mobile-menu-btn"><i class="fa fa-bars" aria-hidden="true"></i></a>
-            <a href="#" id="home-page-link"><img src="https://i.postimg.cc/kXnf6MbG/logo.png" alt="Lawn Love Logo"></a>
-            
-            <!-- Start of menu -->
-            <div class="menu" id="menu">
-
-                <!-- Start of left-menu -->
-                <div class="left-menu" id="left-menu">
-                    <a href="#" id="about-link">about</a>
-                    <a href="#" id="services-link">services</a>
-                    <a href="#" id="contact-link">contact</a>
-                </div>
-                <!-- End of left-menu -->
-
-                <!-- Start of right-menu -->
-                <div class="right-menu" id="right-menu">
-                    <a href="#" id="menu-quote">get a free quote</a>
-                </div>
-                <!-- End of right-menu -->
-
-            </div>
-            <!-- End of menu -->
-
-        </div>
-        <!-- End of header -->
-
-        <!-- Start of squeeze-page -->
-        <div class="squeeze-page" id="squeeze-page">
-
-            <!-- start of squeeze-bg -->
-            <div id="squeeze-bg">
-
-                <!-- Start of container -->
-                <div class="container">
-
-                    <!-- start of squeeze-content -->
-                    <div class="squeeze-content" id="squeeze-content">
-                        <p id="squeeze-slogan">Friendly<br>neighborhood<br>lawncare<span id="squeeze-slogan-punctuation">.</span></p>
-                        <a href="#" id="squeeze-btn">view our services</a>
-
-                        <!-- start of basic-serv -->
-                        <div class="basic-serv" id="basic-serv">
-                            <h2 id="basics">The Basics</h2>
-                            <p><span>&#10003;</span>Mow & edge lawn</p>
-                            <p><span>&#10003;</span>Blow soft & hard areas</p>
-                            <p><span>&#10003;</span>Power hedge shrubs up to 6ft</p>
-                            <p><span>&#10003;</span>Weed control</p>
-                        </div>
-                        <!-- end of basic-serv -->
-
-                    </div>
-                    <!-- end of squeeze-content -->
-
-                    <!-- start of form -->
-                    <div class="form">
-                        <form id="news-form">
-                            <h1 id="form-header">Join our Newsletter!</h1>
-                            <p id="form-info">
-                                Sign up for to promotional and informative monthly news letter and receive a free quote.
-                            </p>
-                            <input type="text" name="name" id="f-name" placeholder="First Name">
-                            <span id="name-error">* Please enter a valid name i.e "Bob"..."</span>
-                            <input type="email" name="email" id="email" placeholder="E-mail">
-                            <span id="email-error">* Please enter a valid Email Address...</span>
-                            <a href="#squeeze-slogan" id="form-btn">submit</a>
-                            
-                            <!-- start of squeezed -->
-
-                            <div class="squeezed">
-
-                                <input type="text" name="address" id="address" placeholder="Address">
-                                <span id="address-error">* Please enter a valid Address...</span>
-                                <input type="text" name="city" id="city" placeholder="City">
-                                <span id="city-error">* Please enter a valid City...</span>
-                                <div id="zip-sec">
-
-                                    <!-- start of zip -->
-                                    <div class="zip">
-                                        <input type="text" name="zip" id="zip" pattern="[0-9]*" placeholder="Zip-Code">
-                                        <span id="zip-error">* Enter valid Zip-Code...</span>
-                                    </div>
-                                    <!-- end of zip -->
-
-                                    <!-- start of state -->
-                                    <div class="state">
-                                        <input type="text" name="state" id="state" placeholder="State">
-                                        <span id="state-error">* Enter valid State...</span>
-                                    </div>
-                                    <!-- start of state -->
-                                    
-                                </div>
-                                <input type="submit" value="submit" id="submit">
-
-                            </div>
-
-                            <!-- end of squeezed -->
-                            
-                        </form>
-                    </div>
-                    <!-- end of form -->
-
-                </div>
-                <!-- End of container -->
-    
-            </div>
-            <!-- start of squeeze-bg -->
-
-        </div>
-        <!-- End of squeeze-page -->
-
-        <!-- start of care -->
-        <div class="care" id="care">
-
-            <h1 id="care-header">How we care</h1>
-            <h3 id="care-sub-header">Our lawn specialists can't wait to start work on your next project.</h3>
-
-            <!-- start of services -->
-            <div class="services" id="services">
-
-                <!-- start of grass-weeds -->
-                <div class="grass-weeds" id="grass-weeds">
-                    <img src="https://i.postimg.cc/cCch92Vd/grass-leaves.png" alt="grass logo">
-                    <h2 id="grass-weeds-header">Grass & Weeds</h2>
-                    <p id="grass-weeds-info">
-                        We'll separate the good from the bad, and treat your lawn with our non-toxic fertilizer.
-                    </p>
-                </div>
-                <!-- end of grass-weeds -->
-
-                <!-- start of mowing -->
-                <div class="mowing" id="mowing">
-                    <img src="https://i.postimg.cc/MGh9vy7J/lawn-mower.png" alt="Lawn mower logo">
-                    <h2 id="mowing-header">Mowing & Whacking</h2>
-                    <p id="mowing-info">
-                        Nothing beats a fresh cut. We go above and beyond with our complete line of Toro equipment.
-                    </p>
-                </div>
-                <!-- end of mowing -->
-
-                <!-- start of landscape -->
-                <div class="landscape" id="landscape">
-                    <img src="https://i.postimg.cc/Wpm51qtx/plant.png" alt="Landscaping logo">
-                    <h2 id="landscape-header">Landscaping Design</h2>
-                    <p id="landscape-info">
-                        From flowers to fire pits. Each of our specialists has a background in landscpaing design. 
-                    </p>
-                </div>
-                <!-- end of landscape -->
-
-                <!-- start of watering -->
-                <div class="watering" id="watering">
-                    <img src="https://i.postimg.cc/RhmGT4pP/water-hose.png" alt="Watering logo">
-                    <h2 id="watering-header">Watering Solutions</h2>
-                    <p id="watering-info">
-                        We'll help you grow it, and keep it growing with our eco-friendly watering methods.
-                    </p>
-                </div>
-                <!-- end of landscape -->
-
-            </div>
-            <!-- end of services -->
-
-        </div>
-        <!-- end of care -->
-
-        <!-- start of history -->
-        <div class="history" id="history">
-            
-            <!-- start of container -->
-            <div class="container">
-
-                <h1 id="history-header">A history of caring</h1>
-                <p id="history-infoA">
-                    Lawn Love has been caring for over 60 years. The tools we use today might be different, but our commitment to quality hasn't changed since we cut our first blade of grass in 1956.
-                </p>
-                <p id="history-infoB">
-                    We're proud to be locally owned and operated. It allows us to hire familiar faces that you can trust with your lawn.
-                </p>
-                <a href="#" id="history-btn">get a free quote</a>
-
-            </div>
-            <!-- end of container -->
-
-        </div>
-        <!-- end of history -->
-
-        <!-- start of consultation -->
-        <div class="consultation" id="consultation">
-
-            <!-- start of consultaion-bg -->
-            <div id="consultation-bg">
-
-                <!-- start of conatainer -->
-                <div class="container">
-                    <h1 id="consultation-header">Meet your new grounds crew<span id="consultaion-period">.</span></h1>
-                    <h4 id="consultation-sub-header">Let's plan a time to chat about your yard.</h4>
-                    <a href="#" id="consultation-btn">schedule a consultation</a>
-                </div>
-                <!-- end of container -->
-
-            </div>
-            <!-- end of consultaion-bg -->
-
-        </div>
-        <!-- end of consultation -->
-
-
-        <!-- start of about-page -->
-        <div class="about-page">
-            <!-- start of about-page-top-banner -->
-            <div id="about-page-top-banner">
-
-                <!-- start of about-banner-bg -->
-                <div id="about-banner-bg">
-                    <h1 id="about-page-top-banner-title">
-                        A long history of care<span>.</span>
-                    </h1>
-                </div>
-                <!-- end of about-banner-bg -->
-                
-            </div>
-            <!-- end of about-page-top-banner -->
-            <!-- start of about-container -->
-            <div class="about-container">
-                <p id="about-p1">
-                    Lawn Love has been caring for lawns for over 60 years. 
-                    The tools we use today might have changed, but our commitment 
-                    to quality hasn't budged since we cut our first blade of grass in 1956.    
-                </p>
-                <p id="about-p2">
-                    We're proud to be locally owned and operated. 
-                    It allows us to hire familiar faces that you can trust with your lawn.  
-                </p>
-                <!-- start of bill -->
-                <div class="bill">
-                    <img src="https://i.postimg.cc/sxYHMzmP/bill.jpg" alt="Bill Glaston" id="bill-img">
-                    <!-- start of bill-bio -->
-                    <div id="bill-bio">
-                        <h1 id="bill-name">Bill Glaston</h1>
-                        <p id="bill-info">
-                            Bill is the founder of Lawn Love. He started Lawn Love back in 1956 with one small lawn mower and a couple neighborhood yards. 
-                            Today Bill can still be found sharpening blades and oiling shears at Lawn Love HQ.
-                        </p>
-                    </div>
-                    <!-- end of bill-bio -->
-                </div>
-                <!-- end of bill -->
-                <!-- start of shay -->
-                <div class="shay">
-                    <img src="https://i.postimg.cc/3RDcHmDc/shay.jpg" alt="Shay Bernard" id="shay-img">
-                    <!-- start of shay-bio -->
-                    <div id="shay-bio">
-                        <h1 id="shay-name">Shay Bernard</h1>
-                        <p id="shay-info">
-                            Shay is the head designer at Lawn Love. With over a decade of experience, 
-                            Shay has worked on projects for Fortune 500 companies and families of 5. 
-                            He takes pride in finding maintainable solutions regardless the size of the client or property.
-                        </p>
-                    </div>
-                    <!-- end of shay-bio -->
-                </div>
-                <!-- end of shay -->
-                <!-- start of garrett -->
-                <div class="garrett">
-                        <img src="https://i.postimg.cc/3N5brNXJ/garrett.jpg" alt="Garrett Martin" id="garrett-img">
-                        <!-- start of garrett-bio -->
-                        <div id="garrett-bio">
-                            <h1 id="garrett-name">Garrett Martin</h1>
-                            <p id="garrett-info">
-                                Odds are you've seen Garrett around town. 
-                                Garrett has been with Lawn Love for over 10 years and specializes in landscaping design.
-                            </p>
-                        </div>
-                        <!-- end of garrett-bio -->
-                </div>
-                <!-- end of garrett -->
-            </div>
-            <!-- end of about-container -->
-            <!-- start of about-page-btm-banner -->
-            <div class="about-page-btm-banner">
-                <h1 id="about-page-btm-banner-title">Let's get started.</h1>
-                <a href="#" id="about-page-btm-banner-btn">SCHEDULE A CONSULTATION</a>
-            </div>
-            <!-- end of about-page-btm-banner -->
-        </div>
-        <!-- end of about-page -->
-
-        <!-- start of services-page -->
-        <div class="services-page">
-            <!-- start of services-page-top-banner -->
-            <div id="services-page-top-banner">
-                <!-- start of services-banner-bg -->
-                <div id="services-banner-bg">
-                    <h1 id="services-page-top-banner-title">
-                        Your new grounds crew<span>.</span>
-                    </h1>
-                </div>
-                <!-- end of services-banner-bg -->
-            </div>
-            <!-- end of services-page-top-banner -->
-            <!-- start of services-container -->
-            <div class="services-container">
-                <!-- start of services-page-grass-weeds -->
-                <div class="services-page-grass-weeds" id="services-page-grass-weeds">
-                    <img src="https://i.postimg.cc/cCch92Vd/grass-leaves.png" alt="grass logo">
-                    <h2 id="services-page-grass-weeds-header">Grass & Weeds</h2>
-                    <p id="services-page-grass-weeds-info">
-                        We'll separate the good from the bad, and treat your lawn with our non-toxic fertilizer.
-                    </p>
-                </div>
-                <!-- end of services-page-grass-weeds -->
-
-                <!-- start of services-page-mowing -->
-                <div class="services-page-mowing" id="services-page-mowing">
-                    <img src="https://i.postimg.cc/MGh9vy7J/lawn-mower.png" alt="Lawn mower logo">
-                    <h2 id="services-page-mowing-header">Mowing & Whacking</h2>
-                    <p id="services-page-mowing-info">
-                        Nothing beats a fresh cut. We go above and beyond with our complete line of Toro equipment.
-                    </p>
-                </div>
-                <!-- end of services-page-mowing -->
-
-                <!-- start of services-page-landscape -->
-                <div class="services-page-landscape" id="services-page-landscape">
-                    <img src="https://i.postimg.cc/Wpm51qtx/plant.png" alt="Landscaping logo">
-                    <h2 id="services-page-landscape-header">Landscaping Design</h2>
-                    <p id="services-page-landscape-info">
-                        From flowers to fire pits. Each of our specialists has a background in landscpaing design. 
-                    </p>
-                </div>
-                <!-- end of services-page-landscape -->
-
-                <!-- start of services-page-watering -->
-                <div class="services-page-watering" id="services-page-watering">
-                    <img src="https://i.postimg.cc/RhmGT4pP/water-hose.png" alt="Watering logo">
-                    <h2 id="services-page-watering-header">Watering Solutions</h2>
-                    <p id="services-page-watering-info">
-                        We'll help you grow it, and keep it growing with our eco-friendly watering methods.
-                    </p>
-                </div>
-                <!-- end of services-page-landscape -->
-                
-            </div>
-            <!-- end of services-container -->
-            <!-- start of services-page-promise -->
-            <div class="services-page-promise">
-                <!-- start of promise-bg -->
-                <div id="promise-bg">
-                    <!-- start of promise-container -->
-                    <div id="promise-container">
-                        <h1 id="promise-title">Our Promise</h1>
-                        <p id="promise-info">
-                            The job isn't done until you're seeing the promised results. 
-                            We believe so deeply in the quality of our work that if you're not happy with the results, 
-                            you don't pay.
-                        </p>
-                    </div>
-                    <!-- end of promise-container -->
-                </div>
-                <!-- end of promise-bg -->
-            </div>
-            <!-- end of services-page-promise -->
-            <!-- start of services-page-btm-banner -->
-            <div class="services-page-btm-banner">
-                <h1 id="services-page-btm-banner-title">Take Your Yard To The Next Level.</h1>
-                <a href="#" id="services-page-btm-banner-btn">SCHEDULE A FREE CONSULTATION</a>
-            </div>
-            <!-- end of services-page-btm-banner -->
-        </div>
-        <!-- end of services-page -->
-
-        <!-- start of contact-page -->
-        <div class="contact-page">
-            <!-- contact-page-start of top-banner -->
-            <div id="contact-page-top-banner">
-                <!-- start of contact-banner-bg -->
-                <div id="contact-banner-bg">
-                    <h1 id="contact-page-top-banner-title">
-                        Get on our lawn<span>.</span>
-                    </h1>
-                </div>
-                <!-- end of contact-banner-bg -->
-            </div>
-            <!-- end of contact-page-top-banner -->
-            <!-- start of contact-page-form -->
-            <form  id="contact-page-form">
-                <p id="contact-page-form-info">
-                    We're excited to start brainstorming ideas for your yard. 
-                    Contact us with the form below and a Lawn Done specialist will contact you within 24 hours.
-                </p>
-                <label id="contact-page-form-name">First Name</label>
-                <input type="text" name="first-name" placeholder="First Name" id="contact-page-form-name-input">
-                <label id="contact-page-form-email">E-mail</label>
-                <input type="email" name="email" placeholder="E-mail" id="contact-page-form-email-input">
-                <label id="contact-page-form-comment">Comment</label>
-                <textarea name="comment" id="contact-page-form-comment-input" placeholder="Comment" cols="30" rows="8"></textarea>
-                <input type="button" value="send" id="contact-page-form-btn">
-            </form>
-            <!-- end of contact-page-form -->
-        </div>
-        <!-- end of contact-page -->
-
-        <!-- start of footer -->
-        <div class="footer" id="footer">
-
-            <!-- start of media-icons -->
-            <div id="media-icons">
-                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
-                <a href="#"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
-            </div>
-            <!-- end of media-icons -->
-
-            <p id="copy-rights">© 2019 All Rights Reserved</p>
-
-        </div>
-        <!-- end of footer -->
-        <!-- start of quote pop-up window -->
-        <div class="quote-pop-up">
-            <!-- start of quote -->
-            <div class="quote">
-                <a href="#" id="quote-close-btn"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                <h1 id="quote-title">Get a free quote.</h1>
-                <h3 id="quote-mesg">Drop us a line, we'll reach out to you within 24 hours to setup an intro call.</h3>
-                <!-- start of quote form -->
-                <form action="POST" id="quote-form">
-                    <input type="text" name="first-name" placeholder="First Name" id="quote-form-name-input">
-                    <span id="quote-name-error">* Please enter a valid name i.e "Bob"..."</span>
-                    <input type="email" name="email" placeholder="E-mail" id="quote-form-email-input">
-                    <span id="quote-email-error">* Please enter a valid Email Address..."</span>
-                    <input type="text" name="city" placeholder="City" id="quote-form-city-input">
-                    <span id="quote-city-error">* Please enter a valid City..."</span>
-                    <input type="button" value="submit" id="quote-form-btn">
-                </form>
-                <!-- end of quote form -->
-            </div>
-            <!-- end of quote -->
-        </div>
-        <!-- end of quote pop-up window -->
-        <!-- start of schedule-pop-up -->
-        <div class="schedule-pop-up">
-            <!-- start of schedule-container -->
-            <div class="schedule-container">
-                <a href="#" id="schedule-close-btn"><i class="fa fa-times-circle" aria-hidden="true"></i></a>
-                <h1 id="thankyou-title">Thanks from <br/>Lawn Love!</h1>
-                <p id="thankyou-msg">
-                    Thank you for chosing Lawn Love, we really appreciate your interest in our services. However, this is just a mock-up site for my porfolio. 
-                </p>
-                <h3 id="thanks">Thank you.</h3>
-            </div>
-            <!-- end of schedule-container -->
-        </div>
-        <!-- end of schedule-pop-up -->
-
-    </body>
+<!DOCTYPE html>
+<html lang=en>
+<head>
+<meta charset=utf-8>
+<meta http-equiv=X-UA-Compatible content="IE=edge">
+<title>Lawn Love</title>
+<meta name=description content="">
+<meta name=viewport content="width=device-width,initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap" rel=stylesheet>
+<link rel=stylesheet href=css/reset.css>
+<link rel=stylesheet href=css/min_main.css>
+<link href=https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css rel=stylesheet integrity=sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN crossorigin=anonymous>
+<script src=https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js></script>
+<script src=js/min_script.js></script>
+</head>
+<body>
+<div class=mobile-menu id=mobile-menu>
+<div class=menu-container id=menu-container>
+<a href=# id=close>X</a>
+<a href=# id=about-mobile-link>about</a>
+<a href=# id=services-mobile-link>services</a>
+<a href=# id=contact-mobile-link>contact</a>
+<a href=# id=mobile-menu-quote>get a free quote</a>
+</div>
+</div>
+<div id=header>
+<a href=# id=mobile-menu-btn><i class="fa fa-bars" aria-hidden=true></i></a>
+<a href=# id=home-page-link><img src=https://i.postimg.cc/kXnf6MbG/logo.png alt="Lawn Love Logo"></a>
+<div class=menu id=menu>
+<div class=left-menu id=left-menu>
+<a href=# id=about-link>about</a>
+<a href=# id=services-link>services</a>
+<a href=# id=contact-link>contact</a>
+</div>
+<div class=right-menu id=right-menu>
+<a href=# id=menu-quote>get a free quote</a>
+</div>
+</div>
+</div>
+<div class=squeeze-page id=squeeze-page>
+<div id=squeeze-bg>
+<div class=container>
+<div class=squeeze-content id=squeeze-content>
+<p id=squeeze-slogan>Friendly<br>neighborhood<br>lawncare<span id=squeeze-slogan-punctuation>.</span></p>
+<a href=# id=squeeze-btn>view our services</a>
+<div class=basic-serv id=basic-serv>
+<h2 id=basics>The Basics</h2>
+<p><span>&#10003;</span>Mow & edge lawn</p>
+<p><span>&#10003;</span>Blow soft & hard areas</p>
+<p><span>&#10003;</span>Power hedge shrubs up to 6ft</p>
+<p><span>&#10003;</span>Weed control</p>
+</div>
+</div>
+<div class=form>
+<form id=news-form>
+<h1 id=form-header>Join our Newsletter!</h1>
+<p id=form-info>
+Sign up for to promotional and informative monthly news letter and receive a free quote.
+</p>
+<div class=input-sec style=position:relative>
+<label for=f-name style=position:absolute;color:transparent>First Name</label>
+<input name=name id=f-name placeholder="First Name">
+<span id=name-error>* Please enter a valid name i.e "Bob"..."</span>
+</div>
+<div class=input-sec style=position:relative>
+<label for=email style=position:absolute;color:transparent>Email</label>
+<input type=email name=email id=email placeholder=E-mail>
+<span id=email-error>* Please enter a valid Email Address...</span>
+</div>
+<div class=input-sec style=position:relative>
+<label for=address style=position:absolute;color:transparent>Address</label>
+<input name=address id=address placeholder=Address>
+<span id=address-error>* Please enter a valid Address...</span>
+</div>
+<div class=input-sec style=position:relative>
+<label for=city style=position:absolute;color:transparent>City</label>
+<input name=city id=city placeholder=City>
+<span id=city-error>* Please enter a valid City...</span>
+</div>
+<div id=zip-sec>
+<div class=zip style=position:relative>
+<label for=zip style=position:absolute;color:transparent>City</label>
+<input name=zip id=zip pattern=[0-9]* placeholder=Zip-Code>
+<span id=zip-error>* Enter valid Zip-Code...</span>
+</div>
+<div class=state style=position:relative>
+<label for=state style=position:absolute;color:transparent>City</label>
+<input name=state id=state placeholder=State>
+<span id=state-error>* Enter valid State...</span>
+</div>
+</div>
+<input type=submit value=submit id=submit>
+</form>
+</div>
+</div>
+</div>
+</div>
+<div class=care id=care>
+<h1 id=care-header>How we care</h1>
+<h3 id=care-sub-header>Our lawn specialists can't wait to start work on your next project.</h3>
+<div class=services id=services>
+<div class=grass-weeds id=grass-weeds>
+<img src=https://i.postimg.cc/cCch92Vd/grass-leaves.png alt="grass logo">
+<h2 id=grass-weeds-header>Grass & Weeds</h2>
+<p id=grass-weeds-info>
+We'll separate the good from the bad, and treat your lawn with our non-toxic fertilizer.
+</p>
+</div>
+<div class=mowing id=mowing>
+<img src=https://i.postimg.cc/MGh9vy7J/lawn-mower.png alt="Lawn mower logo">
+<h2 id=mowing-header>Mowing & Whacking</h2>
+<p id=mowing-info>
+Nothing beats a fresh cut. We go above and beyond with our complete line of Toro equipment.
+</p>
+</div>
+<div class=landscape id=landscape>
+<img src=https://i.postimg.cc/Wpm51qtx/plant.png alt="Landscaping logo">
+<h2 id=landscape-header>Landscaping Design</h2>
+<p id=landscape-info>
+From flowers to fire pits. Each of our specialists has a background in landscpaing design.
+</p>
+</div>
+<div class=watering id=watering>
+<img src=https://i.postimg.cc/RhmGT4pP/water-hose.png alt="Watering logo">
+<h2 id=watering-header>Watering Solutions</h2>
+<p id=watering-info>
+We'll help you grow it, and keep it growing with our eco-friendly watering methods.
+</p>
+</div>
+</div>
+</div>
+<div class=history id=history>
+<div class=container>
+<h1 id=history-header>A history of caring</h1>
+<p id=history-infoA>
+Lawn Love has been caring for over 60 years. The tools we use today might be different, but our commitment to quality hasn't changed since we cut our first blade of grass in 1956.
+</p>
+<p id=history-infoB>
+We're proud to be locally owned and operated. It allows us to hire familiar faces that you can trust with your lawn.
+</p>
+<a href=# id=history-btn>get a free quote</a>
+</div>
+</div>
+<div class=consultation id=consultation>
+<div id=consultation-bg>
+<div class=container>
+<h1 id=consultation-header>Meet your new grounds crew<span id=consultaion-period>.</span></h1>
+<h4 id=consultation-sub-header>Let's plan a time to chat about your yard.</h4>
+<a href=# id=consultation-btn>schedule a consultation</a>
+</div>
+</div>
+</div>
+<div class=about-page>
+<div id=about-page-top-banner>
+<div id=about-banner-bg>
+<h1 id=about-page-top-banner-title>
+A long history of care<span>.</span>
+</h1>
+</div>
+</div>
+<div class=about-container>
+<p id=about-p1>
+Lawn Love has been caring for lawns for over 60 years. The tools we use today might have changed, but our commitment to quality hasn't budged since we cut our first blade of grass in 1956.
+</p>
+<p id=about-p2>
+We're proud to be locally owned and operated. It allows us to hire familiar faces that you can trust with your lawn.
+</p>
+<div class=bill>
+<img src=https://i.postimg.cc/sxYHMzmP/bill.jpg alt="Bill Glaston" id=bill-img>
+<div id=bill-bio>
+<h1 id=bill-name>Bill Glaston</h1>
+<p id=bill-info>
+Bill is the founder of Lawn Love. He started Lawn Love back in 1956 with one small lawn mower and a couple neighborhood yards. Today Bill can still be found sharpening blades and oiling shears at Lawn Love HQ.
+</p>
+</div>
+</div>
+<div class=shay>
+<img src=https://i.postimg.cc/3RDcHmDc/shay.jpg alt="Shay Bernard" id=shay-img>
+<div id=shay-bio>
+<h1 id=shay-name>Shay Bernard</h1>
+<p id=shay-info>
+Shay is the head designer at Lawn Love. With over a decade of experience, Shay has worked on projects for Fortune 500 companies and families of 5. He takes pride in finding maintainable solutions regardless the size of the client or property.
+</p>
+</div>
+</div>
+<div class=garrett>
+<img src=https://i.postimg.cc/3N5brNXJ/garrett.jpg alt="Garrett Martin" id=garrett-img>
+<div id=garrett-bio>
+<h1 id=garrett-name>Garrett Martin</h1>
+<p id=garrett-info>
+Odds are you've seen Garrett around town. Garrett has been with Lawn Love for over 10 years and specializes in landscaping design.
+</p>
+</div>
+</div>
+</div>
+<div class=about-page-btm-banner>
+<h1 id=about-page-btm-banner-title>Let's get started.</h1>
+<a href=# id=about-page-btm-banner-btn>SCHEDULE A CONSULTATION</a>
+</div>
+</div>
+<div class=services-page>
+<div id=services-page-top-banner>
+<div id=services-banner-bg>
+<h1 id=services-page-top-banner-title>
+Your new grounds crew<span>.</span>
+</h1>
+</div>
+</div>
+<div class=services-container>
+<div class=services-page-grass-weeds id=services-page-grass-weeds>
+<img src=https://i.postimg.cc/cCch92Vd/grass-leaves.png alt="grass logo">
+<h2 id=services-page-grass-weeds-header>Grass & Weeds</h2>
+<p id=services-page-grass-weeds-info>
+We'll separate the good from the bad, and treat your lawn with our non-toxic fertilizer.
+</p>
+</div>
+<div class=services-page-mowing id=services-page-mowing>
+<img src=https://i.postimg.cc/MGh9vy7J/lawn-mower.png alt="Lawn mower logo">
+<h2 id=services-page-mowing-header>Mowing & Whacking</h2>
+<p id=services-page-mowing-info>
+Nothing beats a fresh cut. We go above and beyond with our complete line of Toro equipment.
+</p>
+</div>
+<div class=services-page-landscape id=services-page-landscape>
+<img src=https://i.postimg.cc/Wpm51qtx/plant.png alt="Landscaping logo">
+<h2 id=services-page-landscape-header>Landscaping Design</h2>
+<p id=services-page-landscape-info>
+From flowers to fire pits. Each of our specialists has a background in landscpaing design.
+</p>
+</div>
+<div class=services-page-watering id=services-page-watering>
+<img src=https://i.postimg.cc/RhmGT4pP/water-hose.png alt="Watering logo">
+<h2 id=services-page-watering-header>Watering Solutions</h2>
+<p id=services-page-watering-info>
+We'll help you grow it, and keep it growing with our eco-friendly watering methods.
+</p>
+</div>
+</div>
+<div class=services-page-promise>
+<div id=promise-bg>
+<div id=promise-container>
+<h1 id=promise-title>Our Promise</h1>
+<p id=promise-info>
+The job isn't done until you're seeing the promised results. We believe so deeply in the quality of our work that if you're not happy with the results, you don't pay.
+</p>
+</div>
+</div>
+</div>
+<div class=services-page-btm-banner>
+<h1 id=services-page-btm-banner-title>Take Your Yard To The Next Level.</h1>
+<a href=# id=services-page-btm-banner-btn>SCHEDULE A FREE CONSULTATION</a>
+</div>
+</div>
+<div class=contact-page>
+<div id=contact-page-top-banner>
+<div id=contact-banner-bg>
+<h1 id=contact-page-top-banner-title>
+Get on our lawn<span>.</span>
+</h1>
+</div>
+</div>
+<form id=contact-page-form>
+<p id=contact-page-form-info>
+We're excited to start brainstorming ideas for your yard. Contact us with the form below and a Lawn Done specialist will contact you within 24 hours.
+</p>
+<label id=contact-page-form-name>First Name</label>
+<input name=first-name id=contact-page-form-name-input>
+<label id=contact-page-form-email>E-mail</label>
+<input type=email name=email id=contact-page-form-email-input>
+<label id=contact-page-form-comment>Comment</label>
+<textarea name=comment id=contact-page-form-comment-input cols=30 rows=8></textarea>
+<input type=button value=send id=contact-page-form-btn>
+</form>
+</div>
+<div class=footer id=footer>
+<div id=media-icons>
+<a href=# aria-label=Facebook.com><i class="fa fa-facebook" aria-hidden=true></i></a>
+<a href=# aria-label=Tiwtter.com><i class="fa fa-twitter" aria-hidden=true></i></a>
+<a href=# aria-label=Linkedin.com><i class="fa fa-linkedin" aria-hidden=true></i></a>
+</div>
+<p id=copy-rights>© 2019 All Rights Reserved</p>
+</div>
+<div class=quote-pop-up>
+<div class=quote>
+<a href=# id=quote-close-btn><i class="fa fa-times-circle" aria-hidden=true></i></a>
+<h1 id=quote-title>Get a free quote.</h1>
+<h3 id=quote-mesg>Drop us a line, we'll reach out to you within 24 hours to setup an intro call.</h3>
+<form action=POST id=quote-form>
+<input name=first-name placeholder="First Name" id=quote-form-name-input>
+<span id=quote-name-error>* Please enter a valid name i.e "Bob"..."</span>
+<input type=email name=email placeholder=E-mail id=quote-form-email-input>
+<span id=quote-email-error>* Please enter a valid Email Address..."</span>
+<input name=city placeholder=City id=quote-form-city-input>
+<span id=quote-city-error>* Please enter a valid City..."</span>
+<input type=button value=submit id=quote-form-btn>
+</form>
+</div>
+</div>
+<div class=schedule-pop-up>
+<div class=schedule-container>
+<a href=# id=schedule-close-btn><i class="fa fa-times-circle" aria-hidden=true></i></a>
+<h1 id=thankyou-title>Thanks from <br>Lawn Love!</h1>
+<p id=thankyou-msg>
+Thank you for chosing Lawn Love, we really appreciate your interest in our services. However, this is just a mock-up site for my porfolio.
+</p>
+<h3 id=thanks>Thank you.</h3>
+</div>
+</div>
+</body>
 </html>
